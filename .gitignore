@@ -1,7 +1,26 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/bower_components/
+/node_modules/
+/node_modules
+node_modules
+*.psd
+*.gif
+*.zip
+*.idea
+*.DS_Storegit
+_brief/
+.DS_Store
+.idea
+/*.env
+.env
+e --abort
+debug.log
+
+# from server .gitignore:
 
 # dependencies
+.vscode
 /node_modules
+node_modules
 /.pnp
 .pnp.js
 
@@ -9,7 +28,7 @@
 /coverage
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
@@ -21,3 +40,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# mongoURI
+/config/keys_dev.js
