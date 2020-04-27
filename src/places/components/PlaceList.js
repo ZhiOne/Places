@@ -4,7 +4,7 @@ import "./PlaceList.css";
 import Card from "../../shared/components/UIElements/Card";
 import PlaceItem from "./PlaceItem";
 
-const PlaceList = ({items}) => {
+const PlaceList = ({ items }) => {
   if (items.length === 0) {
     return (
       <div className="place-list center">
@@ -20,8 +20,8 @@ const PlaceList = ({items}) => {
     <ul className="place-list">
       {items.map(place => (
         <PlaceItem
-          key={place.id}
-          id={place.id}
+          key={place.userId}
+          id={place.userId}
           image={place.image}
           title={place.title}
           descripion={place.description}

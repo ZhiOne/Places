@@ -22,7 +22,7 @@ const UsersList = ({ items }) => {
       {items.map(user => (
         <div key={Math.random()}>
           <UserItem
-            user={user}
+            id={user.id}
             image={user.image}
             name={user.name}
             placeCount={user.places}
